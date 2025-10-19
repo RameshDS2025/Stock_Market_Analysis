@@ -104,7 +104,6 @@ div.stButton > button:hover {
 </style>
 """, unsafe_allow_html=True)
 
-st.sidebar.image("Side_Bar_Image.JPG", width=150)
 Volatility = st.sidebar.button("Stock Volatility", type="primary")
 Cumulative_Return = st.sidebar.button("Cumulative Return", type="primary")
 yearly_returns = st.sidebar.button("Average yearly Return", type="primary")
