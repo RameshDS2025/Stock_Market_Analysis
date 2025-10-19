@@ -104,6 +104,13 @@ div.stButton > button:hover {
 </style>
 """, unsafe_allow_html=True)
 
+st.sidebar.image("Side_Bar_Image.JPG", width=150)
+Volatility = st.sidebar.button("Stock Volatility", type="primary")
+Cumulative_Return = st.sidebar.button("Cumulative Return", type="primary")
+yearly_returns = st.sidebar.button("Average yearly Return", type="primary")
+Correlation = st.sidebar.button("Correlation of closing stocks", type="primary")
+Gainers_Losers = st.sidebar.button("Top 5 Gainers and Losers", type="primary")
+
 # Button layout with minimal spacing between them
 col1, col2, col3, col4, col5 = st.columns([1, 1, 1, 1, 1])
 
@@ -126,7 +133,10 @@ if "show_welcome" not in st.session_state:
     st.session_state.show_welcome = True
 
 # If any button is clicked, hide the welcome
-if About_us or Stock_Names or Market_Trends or Market_Insights or Contact:
+if any([
+    About_us, Stock_Names, Market_Trends, Market_Insights, Contact,
+    Volatility, Cumulative_Return, yearly_returns, Correlation, Gainers_Losers
+]):
     st.session_state.show_welcome = False
 
 #  Animated Welcome Message 
@@ -261,7 +271,6 @@ if Contact:
 
 # Top 10 Most Volatile Stocks
 
-Volatility = st.sidebar.button("Stock Volatility", type="primary")
 if Volatility:
     st.markdown(
             "<h4 style='color:#020005; background-color:#3b7ead; padding:8px 12px; border-radius:6px; margin-bottom:16px;'>"
@@ -287,7 +296,6 @@ if Volatility:
     st.pyplot(plt)
 
 #Cumulative Return for Top 5 Performing Stocks
-Cumulative_Return = st.sidebar.button("Cumulative Return", type="primary")
 if Cumulative_Return:
     st.markdown(
         "<h4 style='color:#020005; background-color:#3b7ead; padding:8px 12px; border-radius:6px; margin-bottom:16px;'>"
@@ -315,7 +323,6 @@ if Cumulative_Return:
 
 #Sector-wise Performance
 #Average Yearly Return by Sector
-yearly_returns = st.sidebar.button("Average yearly Return", type="primary")
 if yearly_returns:
 
     st.markdown(
@@ -344,7 +351,6 @@ if yearly_returns:
 
 #Correlation of the closing stocks
 
-Correlation = st.sidebar.button("Correlation of closing stocks", type="primary")
 if Correlation:
     st.markdown(
         "<h4 style='color:#020005; background-color:#3b7ead; padding:8px 12px; border-radius:6px; margin-bottom:16px;'>"
@@ -403,7 +409,6 @@ if Correlation:
 
 
 #  Top 5 Gainers and Losers (Month-wise) 
-Gainers_Losers = st.sidebar.button("Top 5 Gainers and Losers", type="primary")
 
 if Gainers_Losers:
     st.markdown(
