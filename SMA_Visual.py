@@ -31,7 +31,7 @@ page_bg_img = f"""
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: rgba(0, 0, 0, 0.6);  /* Optional dark overlay for contrast */
+    background-color: rgba(0, 0, 0, 0.6);  /* Optional dark overlay for contrst */
     background-blend-mode: overlay;
 }}
 
