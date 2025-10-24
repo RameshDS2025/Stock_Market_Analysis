@@ -433,26 +433,26 @@ if Gainers_Losers:
 
         #  Create side-by-side plots 
         fig, ax = plt.subplots(1, 2, figsize=(14, 6), facecolor='#020005')  # Background black
-        fig.patch.set_facecolor("#A1C0E7")
+        fig.patch.set_facecolor("#DB50CF")
 
         # Apply subplot-specific background
         for a in ax:
-            a.set_facecolor("#E4F1FB")
+            a.set_facecolor("#1971B4")
 
         #  Top Gainers 
         sns.barplot(
         x='Ticker', y='Monthly_Return_Percentage',
         data=top_gainers, ax=ax[0], palette='Greens_r'
         )
-        ax[0].set_title('Top 5 Gainers', fontsize=18, weight='bold', color='#004225')
-        ax[0].set_xlabel('Ticker', fontsize=14)
-        ax[0].set_ylabel('Monthly Return (%)', fontsize=14)
-        ax[0].tick_params(axis='x', rotation=45, labelsize=11)
-        ax[0].tick_params(axis='y', labelsize=11)
+        ax[0].set_title('Top 5 Gainers', fontsize=18, weight='bold', color="#610D0D")
+        ax[0].set_xlabel('Ticker', fontsize=18, weight='bold')
+        ax[0].set_ylabel('Monthly Return (%)', fontsize=18, weight='bold')
+        ax[0].tick_params(axis='x', rotation=45, labelsize=13, width=2)
+        ax[0].tick_params(axis='y', labelsize=13, width=2)
 
         #  Label every bar
         for container in ax[0].containers:
-            ax[0].bar_label(container, fmt='%.2f', fontsize=10, padding=3)
+            ax[0].bar_label(container, fmt='%.2f', fontsize=12, padding=1)
 
         #Top Losers
         sns.barplot(
@@ -460,15 +460,15 @@ if Gainers_Losers:
             data=top_losers, ax=ax[1], palette='Reds_r'
         )
         ax[1].invert_yaxis()
-        ax[1].set_title('Top 5 Losers', fontsize=18, weight='bold', color='#6B0000')
-        ax[1].set_xlabel('Ticker', fontsize=14)
-        ax[1].set_ylabel('Monthly Return (%)', fontsize=14)
-        ax[1].tick_params(axis='x', rotation=45, labelsize=11)
-        ax[1].tick_params(axis='y', labelsize=11)
+        ax[1].set_title('Top 5 Losers', fontsize=18, weight='bold', color="#530606")
+        ax[1].set_xlabel('Ticker', fontsize=18, weight='bold')
+        ax[1].set_ylabel('Monthly Return (%)', fontsize=18, weight='bold')
+        ax[1].tick_params(axis='x', rotation=45, labelsize=13, width=2)
+        ax[1].tick_params(axis='y', labelsize=13, width=2)
 
         # Label every bar
         for container in ax[1].containers:
-            ax[1].bar_label(container, fmt='%.2f', fontsize=10, padding=3)
+            ax[1].bar_label(container, fmt='%.2f', fontsize=12, padding=0.5)
 
 
         #  Layout and display 
