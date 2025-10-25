@@ -358,7 +358,7 @@ if Correlation:
     unsafe_allow_html=True)
 
     #  Fetch data with Date included 
-    mycursor.execute("SELECT Company, close, Date FROM stock_data")
+    mycursor.execute("SELECT Company, close, Date FROM master_data")
     data = mycursor.fetchall()
     df = pd.DataFrame(data, columns=['Company', 'close', 'Date'])
     df['Date'] = pd.to_datetime(df['Date'])  # Ensure 'Date' is datetime format
