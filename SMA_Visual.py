@@ -12,7 +12,7 @@ def get_base64_of_bin_file(bin_file):
     return base64.b64encode(data).decode()  #  only read once
 
 # Path to your background image
-image_base64 = get_base64_of_bin_file("SMA_image.jpg")
+image_base64 = get_base64_of_bin_file(r"Images/Side_Bar_Image.JPG")
 
 # CSS to set background across the entire app
 page_bg_img = f"""
@@ -52,7 +52,7 @@ page_bg_img = f"""
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
 # Sidebar logo
-st.sidebar.image("Side_Bar_Image.JPG", width=150)
+st.sidebar.image(r"Images/SMA_image.jpg", width=150)
 
 #Connecting to the database
 mydb = pymysql.connect(
