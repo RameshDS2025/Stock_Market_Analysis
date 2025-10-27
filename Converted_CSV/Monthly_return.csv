@@ -1,4 +1,4 @@
-Ticker,month,open_date,open_price,close_date,close_price,monthly_return (%)
+Ticker,month,open_date,open_price,close_date,close_price,monthly_return
 ADANIENT,Nov-2023,2023-11-01,2217.3,2023-11-30,2358.55,6.37
 ADANIENT,Dec-2023,2023-12-01,2362.7,2023-12-29,2848.95,20.58
 ADANIENT,Jan-2024,2024-01-01,2917.2,2024-01-31,3142.0,7.71

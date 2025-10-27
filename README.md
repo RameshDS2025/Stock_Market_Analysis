@@ -36,15 +36,15 @@ This project focuses on building a comprehensive stock performance dashboard for
 •	Analyze top/worst performing stocks, sector trends, and volatility directly from dashboards.
 
 
+## Screen Shorts
 
-## Screenshots
+![Dashboard Screenshot 1](https://raw.githubusercontent.com/RameshDS2025/Stock_Market_Analysis/main/Screen_Short/SS1.JPG)
+![Dashboard Screenshot 2](https://raw.githubusercontent.com/RameshDS2025/Stock_Market_Analysis/main/Screen_Short/SS2.JPG)
+![Dashboard Screenshot 3](https://raw.githubusercontent.com/RameshDS2025/Stock_Market_Analysis/main/Screen_Short/SS3.JPG)
+![Dashboard Screenshot 4](https://raw.githubusercontent.com/RameshDS2025/Stock_Market_Analysis/main/Screen_Short/SS4.JPG)
+![Dashboard Screenshot 5](https://raw.githubusercontent.com/RameshDS2025/Stock_Market_Analysis/main/Screen_Short/SS5.JPG)
+## Demo
 
-https://github.com/RameshDS2025/Stock_Market_Analysis/blob/main/Screen_Short/SS1.JPG
+[![BI Visual](https://github.com/RameshDS2025/Stock_Market_Analysis/raw/main/Screen_Short/SS5.JPG)](https://github.com/RameshDS2025/Stock_Market_Analysis/raw/main/Screen_Short/BI_Visual.mp4)
 
-https://github.com/RameshDS2025/Stock_Market_Analysis/blob/main/Screen_Short/SS1.JPG
-
-https://github.com/RameshDS2025/Stock_Market_Analysis/blob/main/Screen_Short/SS3.JPG
-
-https://github.com/RameshDS2025/Stock_Market_Analysis/blob/main/Screen_Short/SS4.JPG
-
-https://github.com/RameshDS2025/Stock_Market_Analysis/blob/main/Screen_Short/SS5.JPG
+[![Streamlit Visual](https://github.com/RameshDS2025/Stock_Market_Analysis/raw/main/Screen_Short/SS1.JPG)](https://github.com/RameshDS2025/Stock_Market_Analysis/raw/main/Screen_Short/Streamlit_Visual.mp4)
